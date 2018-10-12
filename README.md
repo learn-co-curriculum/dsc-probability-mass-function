@@ -1,15 +1,16 @@
 
-# Probability Mass Function (pmf)
+# The Probability Mass Function (PMF)
 
 ## Introduction
 So far, we have seen a number of visualization and statistical techniques to get an understanding of the behavior of data. We have seen how boxplots, histograms, stem and leaf plots etc., that can be used to identify data features like central tendency and variance/spread and class distribution present in the data. In this lesson we shall look at another way to represent a distribution - a probability mass function (pmf), which maps from each value to its probability.
 
-## Objectives: 
+## Objectives
+You will be able to: 
 * Develop a mathematical understanding of a discrete variable pmf
 * Develop an intuition for pmf while working with a toy example
 * Visualize the probability mass function and describe its relationship with histograms
 
-### What is pmf ?
+## What is pmf ?
 
 A probability mass function (pmf), sometimes also called just a frequency function gives us probabilities for discrete random variables. We already know that discrete random variables from examples like coin flips and dice rolls etc. The **discrete** part in discrete distributions means that there is a known number of possible outcomes. For example, you can only roll a 1,2,3,4,5, or 6 on a die. **Based on our observations** of all the values from 1 to 6 in a number of dice rolls, we can develop a pmf for the dice showing the probability of each possible value occurring. 
 
@@ -32,7 +33,7 @@ The probabilities of events **{ X = x<sub>k</sub> }** are formally shown by the 
 Thus, the pmf is a probability measure that gives us probabilities of the possible values for a random variable. 
 
 
-### pmf Intuition
+## pmf Intuition
 
 At this stage, some of us may not be able to translate the mathematics above into an intuition. So let's work through a brief example calculating the pmf for a variable. 
 
@@ -92,7 +93,7 @@ np.array(pmf).sum()
 
 
 
-### Visualizing pmf
+## Visualizing pmf
 
 We can inspect pmf of a discrete variable by visualizing it in matplotlib. For this, we can use the leaf plot and have it show the pmf using the probabilities calculated above. We shall see this below:
 
@@ -127,6 +128,6 @@ The bars look almost the same as the lines above. If you look carefully, the dif
 
 
 
-### Summary
+## Summary
 
 In this lesson we looked at probability mass function, and how to get a list of probabilities for each possible value in a discrete random variable, by looking at their frequency of occurring. So we bassically moved from a purely frequenstist domain to a more probabilistic domain with these pmfs. Moving on, we'll see another couple of such probabilistic functions for discrete and continuous variables. 
