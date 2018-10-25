@@ -83,6 +83,11 @@ The pmf is normalized so total probability is 1 as we can check by adding all th
 
 
 ```python
+import numpy as np
+```
+
+
+```python
 np.array(pmf).sum()
 ```
 
@@ -106,10 +111,6 @@ plt.stem(counter.keys(), pmf, '-', 'go', 'r-');
 plt.title ("A Probability Mass Function");
 ```
 
-
-![png](index_files/index_11_0.png)
-
-
 This looks pretty familiar. More like a histogram, but with lines instead of bars. Let's draw a histogram of the data to see if there is any real resembles. 
 
 
@@ -119,7 +120,7 @@ plt.title('Histogram');
 ```
 
 
-![png](index_files/index_13_0.png)
+![png](index_files/index_14_0.png)
 
 
 The bars look almost the same as the lines above. If you look carefully, the difference is only there in the y-axis. A histogram shows the frequency count of each value in a dataset, whereas a pmf, being a probability function shows the data as probabilities. And this is where we started off from. A pmf ingests frequencies of values and convert them into a function of their probability of occurance of those values. 
