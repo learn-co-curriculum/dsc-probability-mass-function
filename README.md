@@ -108,7 +108,7 @@ import matplotlib.pyplot as plt
 %matplotlib inline
 plt.style.use('ggplot')
 
-plt.bar(counter.keys(), pmf);
+plt.stem(counter.keys(), pmf);
 plt.title ("A Probability Mass Function");
 ```
 
