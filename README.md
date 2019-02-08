@@ -2,7 +2,7 @@
 # The Probability Mass Function (PMF)
 
 ## Introduction
-So far, we have seen a number of visualization and statistical techniques to get an understanding of the behavior of data. We have seen how boxplots, histograms, stem and leaf plots etc., that can be used to identify data features like central tendency and variance/spread and class distribution present in the data. In this lesson we shall look at another way to represent a distribution - a probability mass function (pmf), which maps from each value to its probability.
+In this lesson we shall look at another way to represent a distribution - a probability mass function (pmf), which maps from each value to its probability. Recall that PMFs are exclusive to discrete data. We'll investigate a similar concept, the probability density function (PDF) in future lessons.
 
 ## Objectives
 You will be able to: 
@@ -18,11 +18,11 @@ Here is a more formal understanding:
 
 > There is a probability that a discrete random variable X takes on a particular value x, so that P(X = x), denoted as f(x). The function f(x) is typically called the probability mass function, or pmf. 
 
-If X is a discrete random variable then its range R<sub>X</sub> is a countable set of all possible values of X. We can list the elements in R<sub>X</sub> as:
+If X is a discrete random variable then its range R<sub>X</sub> is a countable set of all possible values of X. We can list the elements in $R_x$ as:
 
->R<sub>X</sub>={ x1,x2,x3,... }
+$R_x = { x1,x2,x3,... }$
 
-Where x1,x2,x3 ... are the possible values of X. We are interested in learning if the probability of X = x<sub>k</sub> for some possible value k. 
+where $x1,x2,x3 ...$ are the possible values of $x$. We are interested in quantifying the probability that x is equal to some given quantity k. That is, we want to know $P(k)$. In the case of our die, we might be interested in the probability  of getting a 3 which would be $P(3) = 1/6$
 
 Think of the event A , such that  A = { X = x<sub>k</sub> } is defined as the set of outcomes s in the sample space S for which the corresponding value of X is equal to x<sub>k</sub>.  This can be written as:
 
@@ -33,7 +33,7 @@ The probabilities of events **{ X = x<sub>k</sub> }** are formally shown by the 
 Thus, the pmf is a probability measure that gives us probabilities of the possible values for a random variable. 
 
 
-## pmf Intuition
+## PMF Intuition
 
 At this stage, some of us may not be able to translate the mathematics above into an intuition. So let's work through a brief example calculating the pmf for a variable. 
 
@@ -100,18 +100,23 @@ np.array(pmf).sum()
 
 ## Visualizing pmf
 
-We can inspect pmf of a discrete variable by visualizing it in matplotlib. For this, we can use the leaf plot and have it show the pmf using the probabilities calculated above. We shall see this below:
+We can inspect pmf of a discrete variable by visualizing it in matplotlib. For this, we can use a simple bar graph to show the pmf using the probabilities calculated above. Here's the code:
 
 
 ```python
 import matplotlib.pyplot as plt
+%matplotlib inline
 plt.style.use('ggplot')
 
-plt.stem(counter.keys(), pmf, '-', 'go', 'r-');
+plt.bar(counter.keys(), pmf);
 plt.title ("A Probability Mass Function");
 ```
 
-This looks pretty familiar. More like a histogram, but with lines instead of bars. Let's draw a histogram of the data to see if there is any real resembles. 
+
+![png](index_files/index_12_0.png)
+
+
+This looks pretty familiar. Its essentially just a normalized histogram.
 
 
 ```python
@@ -123,7 +128,7 @@ plt.title('Histogram');
 ![png](index_files/index_14_0.png)
 
 
-The bars look almost the same as the lines above. If you look carefully, the difference is only there in the y-axis. A histogram shows the frequency count of each value in a dataset, whereas a pmf, being a probability function shows the data as probabilities. And this is where we started off from. A pmf ingests frequencies of values and convert them into a function of their probability of occurance of those values. 
+If you look carefully, the difference is only there in the y-axis. A histogram shows the frequency count of each value in a dataset, whereas a pmf, being a probability function shows the data as probabilities. And this is where we started off from. A pmf ingests frequencies of values and convert them into a function of their probability of occurance of those values. 
 
 **NOTE**: In some literature, the pmf is also called just the **probability distribution**. The phrase distribution function is usually reserved exclusively for the cumulative distribution function CDF. 
 
