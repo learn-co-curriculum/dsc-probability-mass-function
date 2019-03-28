@@ -155,7 +155,7 @@ $$\large E(X) = \mu = \sum_i p(x_i)x_i$$
 
 The variance is given by:
 
-$$\large E((X-\mu)^2) = \mu = \sum_i p(x_i)(x_i-\mu)^2$$
+$$\large E((X-\mu)^2) = \sigma^2 = \sum_i p(x_i)(x_i-\mu)^2$$
 
 
 The table below pust these formulas into practice using our example to get a better understanding!
