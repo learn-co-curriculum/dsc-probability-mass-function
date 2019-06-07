@@ -4,7 +4,6 @@
 ## Introduction
 In this lesson you'll look at a way to represent discrete distributions - the probability mass function (pmf), which maps from each value to its probability. You'll explore Probability Density Functions (PDFs) for continuous data later!
 
-We'll investigate a similar concept, the probability density function (PDF) the next lessons.
 
 ## Objectives
 You will be able to: 
