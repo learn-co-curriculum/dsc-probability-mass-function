@@ -167,7 +167,7 @@ The table below pust these formulas into practice using our example to get a bet
 | $(x_i-\mu)^2$| $(-1.45)^2 = 2.1025$| $(-0.45)^2=0.2025$|$(0.55)^2=0.3025$|$(1.55)^2=2.4025$|$(2.55)^2=6.5025$ |
 | $ p(x_i)(x_i-\mu)^2$|$0.65175$|$0.062775$|$0.045375$|$0.1922$|$0.975375$|$1.927475$|
 
-As you can see from the far right column, the expected vslue is equal to 2.45, and the variance is equal to 1.927475. Even though for this example these values may not be super informative, you'll learn how these two descriptive quantities are often important parameters in many distributions to come!
+As you can see from the far right column, the expected value is equal to 2.45, and the variance is equal to 1.927475. Even though for this example these values may not be super informative, you'll learn how these two descriptive quantities are often important parameters in many distributions to come!
 
 **NOTE**: In some literature, the PMF is also called just the **probability distribution**. The phrase distribution function is usually reserved exclusively for the cumulative distribution function CDF. 
 
