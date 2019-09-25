@@ -2,7 +2,7 @@
 # The Probability Mass Function (PMF)
 
 ## Introduction
-In this lesson you'll look at a way to represent discrete distributions - the probability mass function (pmf), which maps from each value to its probability. You'll explore Probability Density Functions (PDFs) for continuous data later!
+In this lesson, you'll look at a way to represent discrete distributions - the probability mass function (PMF), which maps from each value to its probability. You'll explore probability density functions (PDFs) for continuous data later!
 
 
 ## Objectives
@@ -13,9 +13,9 @@ You will be able to:
 
 ## What is a Probability Mass Function (PMF)?
 
-A probability mass function (pmf), sometimes referred to as a frequency function, are functions that associate probabilities with discrete random variables. You already learned about this in the context of coin flips and dice rolls. The **discrete** part in discrete distributions means that there is a **known number of possible outcomes**. 
+A probability mass function (PMF), sometimes referred to as a frequency function, is a function that associate probabilities with discrete random variables. You already learned about this in the context of coin flips and dice rolls. The **discrete** part in discrete distributions means that there is a **known number of possible outcomes**. 
 
-**Based on your experience of rolling a dice**, you know can develop a PMF showing the probabilities of each possible value between 1 and 6 occurring.
+**Based on your experience of rolling a dice**, you can develop a PMF showing the probabilities of each possible value between 1 and 6 occurring.
 
 
 More formally:
@@ -33,7 +33,7 @@ where $x_1,x_2,x_3,\ldots$ are the possible values of $x$.
 
 We are interested in quantifying the probability that $X$ is equal to some given quantity $x_3$. That is, we want to know $P(x_3)$. In the case of our dice, we might be interested in the probability  of getting a 3 which would be $P(3) = \dfrac{1}{6}$
 
-Think of the event $A$, so that  $A = \{ X = x_k \}$ is defined as the set of outcomes $s$ in the sample space $S$ for which the corresponding value of $X$ is equal to $x_k$.  This can be written as:
+Think of the event $A$, such that  $A = \{ X = x_k \}$ is defined as the set of outcomes $s$ in the sample space $S$ for which the corresponding value of $X$ is equal to $x_k$.  This can be written as:
 
 $$\large A = \{ s \in S \mid X(s) = x_k \}$$
 
@@ -41,9 +41,9 @@ $$\large A = \{ s \in S \mid X(s) = x_k \}$$
 
 Let's work through a brief example calculating the PMF for a discrete random variable!
 
-You have previously seen that a **probability** is a number in the range [0,1] that is calculated as *frequency expressed as a fraction of the sample size.* This means that, in order to convert and random variable's frequency into a probability, we need to perform the following steps:
+You have previously seen that a **probability** is a number in the range [0,1] that is calculated as the *frequency expressed as a fraction of the sample size.* This means that, in order to convert any random variable's frequency into a probability, we need to perform the following steps:
 
-* Get the frequency of each possible value in the dataset
+* Get the frequency of every possible value in the dataset
 * Divide the frequency of each value by the total number of values (length of dataset)
 * Get the probability for each value
 
@@ -79,7 +79,7 @@ print(counter.keys(), pmf)
     dict_keys([1, 2, 3, 4, 5]) [0.31, 0.31, 0.15, 0.08, 0.15]
 
 
-You notice that the PMF is normalized so total probability is 1.
+You notice that the PMF is normalized so the total probability is 1.
 
 
 ```python
@@ -97,7 +97,7 @@ np.array(pmf).sum()
 
 ## Visualizing a PMF
 
-You can inspect the PMF of a discrete variable by visualizing the distribution using matplotlib. You can use a simple bar graph to show the PMF using the probabilities calculated above. Here's the code:
+You can inspect the PMF of a discrete variable by visualizing the distribution using `matplotlib`. You can use a simple bar graph to show the PMF using the probabilities calculated above. Here's the code:
 
 
 ```python
@@ -148,7 +148,7 @@ plt.hist(x, bins=bins,  rwidth=0.25, density=True);
 
 ## Expected Value and Variance
 
-When talking about distributions, there will generally be two descriptive quantities you're interested in: the **expected value** and the **mean**. For discrete distributions, the expected Value of your discrete random value X is given by:
+When talking about distributions, there will generally be two descriptive quantities you're interested in: the **expected value** and the **mean**. For discrete distributions, the expected value of your discrete random value X is given by:
 
 $$\large E(X) = \mu = \sum_i p(x_i)x_i$$
 
@@ -167,10 +167,10 @@ The table below pust these formulas into practice using our example to get a bet
 | $(x_i-\mu)^2$| $(-1.45)^2 = 2.1025$| $(-0.45)^2=0.2025$|$(0.55)^2=0.3025$|$(1.55)^2=2.4025$|$(2.55)^2=6.5025$ |
 | $ p(x_i)(x_i-\mu)^2$|$0.65175$|$0.062775$|$0.045375$|$0.1922$|$0.975375$|$1.927475$|
 
-As you can see from the far right column, the expected value is equal to 2.45, and the variance is equal to 1.927475. Even though for this example these values may not be super informative, you'll learn how these two descriptive quantities are often important parameters in many distributions to come!
+As you can see from the far right column, the expected value is equal to 2.45 and the variance is equal to 1.927475. Even though for this example these values may not be super informative, you'll learn how these two descriptive quantities are often important parameters in many distributions to come!
 
-**NOTE**: In some literature, the PMF is also called just the **probability distribution**. The phrase distribution function is usually reserved exclusively for the cumulative distribution function CDF. 
+**NOTE**: In some literature, the PMF is also called the **probability distribution**. The phrase distribution function is usually reserved exclusively for the cumulative distribution function CDF. 
 
 ## Summary
 
-In this lesson you learned more about the probability mass function, and how to get a list of probabilities for each possible value in a discrete random variable, by looking at their frequencies. You also learned about the concept of expected value and variance for discrete distributions. Moving on, you'll learn about probability density functions for continuous variables.
+In this lesson, you learned more about the probability mass function and how to get a list of probabilities for each possible value in a discrete random variable by looking at their frequencies. You also learned about the concept of expected value and variance for discrete distributions. Moving on, you'll learn about probability density functions for continuous variables.
