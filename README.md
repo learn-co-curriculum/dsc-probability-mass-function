@@ -148,7 +148,7 @@ plt.hist(x, bins=bins,  rwidth=0.25, density=True);
 
 ## Expected Value and Variance
 
-When talking about distributions, there will generally be two descriptive quantities you're interested in: the **expected value** and the **mean**. For discrete distributions, the expected value of your discrete random value X is given by:
+When talking about distributions, there will generally be two descriptive quantities you're interested in: the **expected value** and the **Variance**. For discrete distributions, the expected value of your discrete random value X is given by:
 
 $$\large E(X) = \mu = \sum_i p(x_i)x_i$$
 
