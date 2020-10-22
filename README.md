@@ -138,13 +138,18 @@ While we're at it, let's rescale our x-axis a little bit better in our histogram
 
 
 ```python
-xtick_locations = np.arange(1.5, 7.5, 1)  # x=5, 15, 25, ...
-xtick_labels = ['1', '2', '3', '4', '5']
-bins = range(1, 7, 1) 
-plt.xticks(xtick_locations, xtick_labels)
+xtick_locations = range(1,6)
+bins = np.arange(6)+0.5
+plt.xticks(ticks=xtick_locations)
+plt.xlabel('Number')
+plt.ylabel('Probability')
 
 plt.hist(x, bins=bins,  rwidth=0.25, density=True);
 ```
+
+
+![png](index_files/index_11_0.png)
+
 
 ## Expected Value and Variance
 
