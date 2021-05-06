@@ -162,7 +162,7 @@ The variance is given by:
 $$\large E((X-\mu)^2) = \sigma^2 = \sum_i p(x_i)(x_i-\mu)^2$$
 
 
-The table below pust these formulas into practice using our example to get a better understanding!
+The table below puts these formulas into practice using our example to get a better understanding!
 
 | outcome      | 1     | 2     | 3     | 4    | 5     |$\sum$  |
 |--------------|-------|-------|-------|------|-------|--------|
