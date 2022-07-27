@@ -1,12 +1,14 @@
 # The Probability Mass Function (PMF)
 
 ## Introduction
+
 In this lesson, you'll look at a way to represent discrete distributions - the probability mass function (PMF), which maps from each value to its probability. You'll explore probability density functions (PDFs) for continuous data later!
 
 
 ## Objectives
 
-You will be able to: 
+You will be able to:
+
 * Describe how probability is represented in the probability mass function
 * Visualize the PMF and describe its relationship with histograms
 
@@ -135,7 +137,9 @@ plt.ylabel("Probabilities of Outcomes");
 ```
 
 
+    
 ![png](index_files/index_9_0.png)
+    
 
 
 This looks pretty familiar. It's essentially a normalized histogram! The PMF has already calculated all of the x values and heights for us, so we are using a bar graph to show it.
@@ -151,7 +155,9 @@ plt.ylabel("Frequencies of Outcomes");
 ```
 
 
+    
 ![png](index_files/index_11_0.png)
+    
 
 
 If you look carefully, there are two differences between this histogram and the graph of the PMF above:
@@ -173,7 +179,9 @@ plt.title("Adjusted Histogram with `density=True`");
 ```
 
 
+    
 ![png](index_files/index_13_0.png)
+    
 
 
 ### Why Compare PMF Bar Graph vs. Histogram?
