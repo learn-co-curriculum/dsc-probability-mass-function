@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In this lesson, you'll look at a way to represent discrete distributions - the probability mass function (PMF), which maps from each value to its probability. You'll explore probability density functions (PDFs) for continuous data later!
+In this lesson, you'll look at a way to represent discrete distributions - the probability mass function (PMF), which maps from each value to its probability.
 
 
 ## Objectives
@@ -43,7 +43,7 @@ $$\large A = \{ s \in S \mid X(s) = x_k \}$$
 
 Let's work through a brief example calculating the probability mass function for a discrete random variable!
 
-You have previously seen that a **probability** is a number in the range [0,1] that is calculated as the *frequency expressed as a fraction of the sample size.* This means that, in order to convert any random variable's frequency into a probability, we need to perform the following steps:
+A **probability** is a number in the range [0,1] that is calculated as the *frequency expressed as a fraction of the sample size.* This means that, in order to convert any random variable's frequency into a probability, we need to perform the following steps:
 
 * Get the frequency of every possible value in the dataset
 * Divide the frequency of each value by the total number of values (length of dataset)
@@ -230,7 +230,7 @@ The variance is given by:
 
 $$\large E((X-\mu)^2) = \sigma^2 = \sum_i p(x_i)(x_i-\mu)^2$$
 
-In other words, the variance is the sum of the probabilities of each $x_i$ times the squared difference between that $x_i$ and the expected value. Similar to the mean above, this is just a minor reordering of the variance formulas you have seen previously.
+In other words, the variance is the sum of the probabilities of each $x_i$ times the squared difference between that $x_i$ and the expected value. Similar to the mean above, this is just a minor reordering of the variance formulas.
 
 (Also, recall that standard deviation $\sigma$ is the square root of the variance $\sigma^2$.)
 
